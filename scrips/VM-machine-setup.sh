@@ -6,7 +6,7 @@ sudo apt-get upgrade -y
 # Setup Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-sudo usermod -aG docker icloud
+sudo usermod -aG docker prasadlola55 # prasadlola55 is a ssh in browser name
 newgrp docker
 
 
@@ -39,7 +39,8 @@ sudo nano /etc/opt/circleci/launch-agent-config.yaml
 
 # Add API in the file and change permissions
 api:
-    auth_token: fe1934e387e8da6bc6e1b7370e2b543e71adcdcb36ae5df015ddfba702654bfcd9d31078e3fbbfd2
+    auth_token: f4033dfed56863d7028d1bcc0568107cd67f0cb8279b0e1a550249030a8bfa2d621f00d7d7e88b99
+
 
 runner:
     name: self-hosted
@@ -85,4 +86,5 @@ sudo systemctl start circleci.service
 sudo systemctl restart circleci.service
 sudo systemctl status circleci.service
 
-## Now stop and start the VM
+## Now stop and start the VM 
+sudo reboot now

@@ -12,3 +12,15 @@ jobs:
     resource_class: prasad/name_entity_recognition
     steps:
       - run: echo "Hi I'm on Runners!"
+
+asia-south1-docker.pkg.dev/synthetic-howl-431707-d9/ner-bert1
+
+
+api:
+    auth_token: f4033dfed56863d7028d1bcc0568107cd67f0cb8279b0e1a550249030a8bfa2d621f00d7d7e88b99
+
+
+runner:
+    name: self-hosted
+    working_directory: /var/opt/circleci/workdir
+    cleanup_working_directory: true
